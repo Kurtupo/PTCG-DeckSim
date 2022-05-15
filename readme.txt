@@ -44,7 +44,7 @@ FAQ
         common like Python.
     
     Q: When can I expect the next video in either series to release?
-    A: The Cases and Episodes have different "peoduction timelines" and
+    A: The Cases and Episodes have different "production timelines" and
         require different skills.
 
         Writing the code for each Case & Episode is easy enough and
@@ -62,10 +62,10 @@ FAQ
         finish those.
 
         I try to make sure both a Case and its corresponding Episode
-        release at the same time, so the code may not be released even
-        though the code is "finished". I tend to work on each Case &
-        Episode with the next ones in mind so if you really are curious as
-        to what's coming up next, feel free to reach out to me!
+        release at the same time, but the code may be released early here
+	on Github since the code is "finished". I tend to work on each Case
+        & Episode with the next ones in mind so if you really are curious
+        as to what's coming up next, feel free to reach out to me!
 
     Q: I noticed there's more stuff than your code here on Github. What's
         up with that?
@@ -80,15 +80,13 @@ FAQ
         very day of release and thumbnails can be changed even after the
         video is released!
 
-    Q: Do you play the Pokemon Trading Card Game competitively?
-    A: Yes, but actually no. I play the Expanded format competitively but
-        I have yet to attend a big premier tournament - in no small part
-        due to the lack of official Expanded tournaments. Perhaps with the
-        release of Pokemon Trading Card Game Live and Ranked Expanded
-        alongside it, I'll be able to prove how busted my Devolution
-        Control deck is :)
-
 Changelog:
+-- v0.9 -- "Pre-release 2"
+	- Published Episode 2 code
+	- Updated Episode 1 code
+	- Updated FAQ
+	- Still haven't come up with a better name for the project
+
 -- v0.8 -- "Pre-release"
 	- Published for the first time
 	- Episode 1 code published

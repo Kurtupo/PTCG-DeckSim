@@ -1,13 +1,12 @@
-function [outputMulliganCount, outputAmountOfBasicsInHand, outputHand, outputPrizeCards, outputDeck] = ObtainOpeningHand(inputStartingDeck)
+function [outputHand, outputPrizeCards, outputDeck] = ObtainOpeningHand(inputStartingDeck)
 % Concept: Obtains an opening hand given a Pokemon Trading Card Game deck
 % Opponent-mulligan interactions are neglected for now, although the number
 % of "self" mulligans are still recorded
 
-
 Deck = inputStartingDeck;
 Hand = [];
 PrizeCards = [];
-HeroMulligan = 0; % How many times "you" have mulliganed
+HeroMulligan = 0; % How many times "you" have mulliganed.
 
 
 % Steps for setting up to play the Pokemon Trading Card Game:
@@ -28,7 +27,7 @@ Deck = RowShuffleEntireMatrix(Deck);
 % Step 3: Check for mulligan conditions and resolve them.
 MulliganLoop = 1;
 while MulliganLoop
-    AmountOfBasicsInHand = length( find(Hand=="Dragapult V" | Hand=="Jirachi" | Hand=="Galarian Zigzagoon" | Hand=="Giratina" | Hand=="Dedenne-GX") ); % Basics are hard-coded for now
+    AmountOfBasicsInHand = length( find(Hand=="Dunsparce" | Hand=="Pikachu" | Hand=="Feebas" | Hand=="Porygon" | Hand=="Celebi Prism Star") ); % Basics are hard-coded for now
     if AmountOfBasicsInHand > 0
         MulliganLoop = 0;
     else
@@ -56,8 +55,8 @@ end
 % % fprintf("You had to mulligan %s times, btw. \n \n", string(HeroMulligan))
 
 % Determine the output variables
-outputMulliganCount = HeroMulligan;
-outputAmountOfBasicsInHand = AmountOfBasicsInHand;
+% outputMulliganCount = HeroMulligan; % Unused in this version
+% outputAmountOfBasicsInHand = AmountOfBasicsInHand; % Unused in this version
 outputHand = Hand;
 outputPrizeCards = PrizeCards;
 outputDeck = Deck;
